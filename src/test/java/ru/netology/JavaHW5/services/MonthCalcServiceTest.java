@@ -16,7 +16,7 @@ public class MonthCalcServiceTest {
 //            "2,100000,60000,150000",
 //    })
 
-    @CsvFileSource(files="src/test/resources/month.csv")
+    @CsvFileSource(files = "src/test/resources/month.csv")
     public void testForThreeMonthOfRest(int expected, int income, int expenses, int threshold) {
         MonthCalcService service = new MonthCalcService();
 
